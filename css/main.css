@@ -1,0 +1,121 @@
+body {
+    background-color: #5a56ad;
+    font-family: 'Lato', sans-serif;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    margin: auto;
+    clear: both;
+}
+.container {
+    width: 960px;
+    margin: 25px auto;
+}
+.navbar {
+    list-style: none;
+    margin-bottom: 50px;
+}
+.navbar li {
+    width: 160px;
+    float: left;
+}
+.navbar__link,
+.dropdown__link {
+    display: block;
+    background-color: #2489c5;
+    text-decoration: none;
+    color: #000;
+    margin: 3px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.selected {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin: 3px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ADD7F0;
+}
+
+.dropdown__link {
+    background-color: #ADD7F0;
+}
+.navbar__link:hover {
+    background-color: #ADD7F0;
+}
+.dropdown__link:hover {
+    background-color: #57b6ef;
+}
+
+
+.dropdown {
+    display: none;
+}
+.slider {
+    width: 630px;
+    height: 330px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 15px;
+    -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+}
+.select__block {
+    width: 500px;
+    margin: 10px auto;
+    font-weight: 300;
+    font-size: 16px;
+}
+select {
+    display: inline-block;
+    width: 150px;
+}
+.header {
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.checkbox__block {
+    width: 600px;
+    margin: 0 auto;
+}
+.checkbox__container li {
+    display: inline-block;
+    width: 150px;
+    margin-left: 45px;
+
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+    cursor: pointer;
+}
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin: 0 5px 0 0;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+}
+input[type="checkbox"] + label::before {
+    background-position: -38px -260px;
+}
+input[type="checkbox"]:checked + label::before {
+    background-position: -114px -260px;
+}
