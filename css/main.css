@@ -10,11 +10,27 @@ body {
 }
 .container {
     width: 960px;
-    margin: 25px auto;
+    margin: 30px auto;
+}
+.sub-header {
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.top {
+    margin-top: 70px;
 }
 .navbar {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 960px;
+    margin: 0 auto;
     list-style: none;
-    margin-bottom: 50px;
+    z-index: 2;
 }
 .navbar li {
     width: 160px;
@@ -41,7 +57,6 @@ body {
     text-align: center;
     background-color: #ADD7F0;
 }
-
 .dropdown__link {
     background-color: #ADD7F0;
 }
@@ -51,10 +66,19 @@ body {
 .dropdown__link:hover {
     background-color: #57b6ef;
 }
-
-
 .dropdown {
     display: none;
+}
+.dropdown__item {
+    position: relative;
+}
+.dropdown--second {
+    position: absolute;
+    left: 160px;
+    top: 0;
+}
+.arrow {
+    margin-left: 5px;
 }
 .slider {
     width: 630px;
@@ -75,14 +99,6 @@ body {
 select {
     display: inline-block;
     width: 150px;
-}
-.header {
-    font-weight: 400;
-    font-size: 36px;
-    text-align: center;
-    color: #fff;
-    margin-top: 40px;
-    margin-bottom: 20px;
 }
 .checkbox__block {
     width: 600px;

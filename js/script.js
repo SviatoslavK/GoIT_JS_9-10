@@ -1,13 +1,13 @@
 $(function(){
 
-    $('.navbar__item').hover(function() {
+    $('.navbar li').hover(function() {
         $(this).children('.dropdown').stop(false, true).fadeIn(300);
         $(this).children('a').addClass('selected');
+
     }, function() {
         $(this).children('.dropdown').stop(false, true).fadeOut(300);
         $(this).children('a').removeClass('selected');
     });
-
 
     $('#slider-single').slick({
         dots: true,

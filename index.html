@@ -14,9 +14,9 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar clearfix">
+        <nav class="navbar">
             <li class="navbar__item"><a href="#" class="navbar__link">Link-1</a></li>
-            <li class="navbar__item"><a href="#" class="navbar__link">Link-2</a>
+            <li class="navbar__item"><a href="#" class="navbar__link">Link-2 <span class="arrow--down">&#9660</span></a>
                 <ul class="dropdown">
                     <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-1</a></li>
                     <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-2</a></li>
@@ -25,29 +25,55 @@
                     <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-5</a></li>
                 </ul>
             </li>
-            <li class="navbar__item"><a href="#" class="navbar__link">Link-3</a>
+            <li class="navbar__item"><a href="#" class="navbar__link">Link-3 <span class="arrow">&#9660</span></a>
                 <ul class="dropdown">
                     <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-1</a></li>
                     <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-2</a></li>
-                    <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-3</a></li>
+                    <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">SubLink-3<span class="arrow">&#9654</span></a>
+                        <ul class="dropdown dropdown--second">
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-1</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-2</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-3</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-4</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-5</a></li>
+                        </ul>
+                    </li>
                     <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-4</a></li>
                     <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-5</a></li>
                 </ul>
             </li>
-            <li class="navbar__item"><a href="#" class="navbar__link">Link-4</a>
+            <li class="navbar__item"><a href="#" class="navbar__link">Link-4 <span class="arrow">&#9660</span></a>
                 <ul class="dropdown">
-                    <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-1</a></li>
+                    <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">SubLink-1<span class="arrow">&#9654</span></a>
+                        <ul class="dropdown dropdown--second">
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-1</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-2</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-3</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-4</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-5</a></li>
+                        </ul>
+                    </li>
                     <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-2</a></li>
                     <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-3</a></li>
                     <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-4</a></li>
-                    <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-5</a></li>
+                    <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">SubLink-5 <span class="arrow">&#9654</span></a>
+                        <ul class="dropdown dropdown--second">
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-1</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-2</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-3</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-4</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">SubLink-5</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
             <li class="navbar__item"><a href="#" class="navbar__link">Link-5</a></li>
             <li class="navbar__item"><a href="#" class="navbar__link">Link-6</a></li>
         </nav>
-
-        <h1 class="header">Carousel single item</h1>
+        <h2 class="sub-header top">Carousel single item</h2>
         <div class="slider" id="slider-single">
             <div class="slider__content"><img src="http://lorempixel.com/600/300/animals" alt=""></div>
             <div class="slider__content"><img src="http://lorempixel.com/600/300/sports" alt=""></div>
@@ -61,7 +87,7 @@
             <div class="slider__content"><img src="http://lorempixel.com/600/300/technics" alt=""></div>
         </div>
         <div class="select__block">
-            <h2 class="header">Select example</h2>
+            <h2 class="sub-header">Select example</h2>
             <select>
                 <option>Select 1</option>
                 <option>Select 2</option>
@@ -88,13 +114,13 @@
             </select>
         </div>
         <div class="checkbox__block">
-            <h1 class="header">Checkbox on CSS</h1>
+            <h2 class="sub-header">Checkbox on CSS</h2>
             <ul class="checkbox__container">
                 <li><input type="checkbox" id="check1" hidden><label for="check1">Value-1</label></li>
                 <li><input type="checkbox" id="check2"><label for="check2">Value-2</label></li>
                 <li><input type="checkbox" id="check3"><label for="check3">Value-3</label></li>
             </ul>
-            <h1 class="header">Checkbox on jQuery</h1>
+            <h2 class="sub-header">Checkbox on jQuery</h2>
             <input type="checkbox" class="checkbox-js">
             <label>Checkbox 1</label>
             <input type="checkbox" checked class="checkbox-js">
